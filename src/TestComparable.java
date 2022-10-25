@@ -5,6 +5,12 @@ public class TestComparable implements Comparable {
     @Override
     public int compareTo(Object o) {
         TestComparable test = (TestComparable) o;
+
+        if (test.position > this.position) {
+            return -1;
+        } else if (test.position < this.position) {
+            return 1;
+        }
         return 0;
     }
 
