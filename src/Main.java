@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Creating first object");
@@ -6,5 +8,11 @@ public class Main {
         System.out.println("Creating second object");
         TestComparable secondObject = new TestComparable("Keyboard", 2);
         System.out.println("Second object name: " + secondObject.name + "\nSecond object position: " + secondObject.position);
+
+        ArrayList<TestComparable> myList = new ArrayList();
+        myList.add(secondObject);
+        myList.add(firstObject);
+
+        System.out.println(myList.get(0).position);
     }
 }
