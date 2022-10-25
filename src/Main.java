@@ -13,6 +13,10 @@ public class Main {
         myList.add(secondObject);
         myList.add(firstObject);
 
-        System.out.println(myList.get(0).position);
+        System.out.println(myList.get(0).name);
+
+        TestComparable.sort(myList);
+
+        System.out.println(myList.get(0).name);
     }
 }

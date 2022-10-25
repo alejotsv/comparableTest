@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class TestComparable implements Comparable {
     String name;
     int position;
@@ -18,5 +21,10 @@ public class TestComparable implements Comparable {
         this.name = name;
         this.position = position;
     }
+
+    public static void sort(ArrayList<TestComparable> list) {
+        Collections.sort(list);
+    }
+
 
 }
