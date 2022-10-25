@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is the main class");
+        System.out.println("Creating first object");
+        TestComparable firstObject = new TestComparable("Mouse", 1);
+        System.out.println("First object name: " + firstObject.name + "\nFirst object position: " + firstObject.position);
+        System.out.println("Creating second object");
+        TestComparable secondObject = new TestComparable("Keyboard", 2);
+        System.out.println("Second object name: " + secondObject.name + "\nSecond object position: " + secondObject.position);
     }
 }
